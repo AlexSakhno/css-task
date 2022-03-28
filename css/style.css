@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Medium.otf");
+}
+
+body {
+  background-color: #eff6ff;
+  color: #2a4a5c;
+  font-family: "Barlow";
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-color: white;
+  height: 95vh;
+}
+
+.images {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.images-logo {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  background: url("../img/logo.svg") no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 35px;
+}
+
+.registration {
+  width: 50%;
+  height: 100%;
+  padding-top: 100px;
+  padding-left: 70px;
+}
+
+.registration-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-auth_title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.home-auth_slogan {
+  font-size: 20px;
+  color: #7b8a92;
+  margin-bottom: 50px;
+}
+
+.registration-button {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.registration-button > button {
+  position: relative;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 245px;
+  height: 45px;
+  margin-right: 35px;
+}
+
+.registration-button_social--f {
+  margin-right: 35px;
+  background-color: #255a9b;
+
+  box-sizing: border-box;
+}
+
+.registration-button_social--f:hover {
+  background-color: #0076b6;
+}
+
+.registration-button_social--f::after {
+  position: absolute;
+  content: "";
+  top: 25%;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/facebook.svg") no-repeat;
+  background-size: contain;
+}
+
+.registration-button_social--l {
+  background-color: #0076b6;
+  box-sizing: border-box;
+}
+
+.registration-button_social--l:hover {
+  background-color: #255a9b;
+}
+
+.registration-button_social--l::after {
+  position: absolute;
+  content: "";
+  top: 25%;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/linkedin.svg") no-repeat;
+  background-size: contain;
+}
+
+.separator {
+    position: relative;
+    font-size: 12px;
+    
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: 35px;
+}
+
+.separator::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 110px;
+    width: 110px;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.separator::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 110px;
+    width: 110px;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.registration-input { 
+    display: flex;   
+    margin-bottom: 50px;
+}
+
+.registration-input_box {
+    position: relative;
+    width: 245px;
+    height: 55px;
+    border: 1px solid #e5e5e5;
+    padding: 25px 10px 0 10px;
+    box-sizing: border-box;
+    margin-right: 35px;
+}
+
+.registration-input_box>input {
+    box-sizing: border-box;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+}
+
+.registration-input_box>input:focus {
+    outline: none;
+}
+
+.registration-input_box:hover {
+    border-left: 2px solid #3597fc;
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 1024px;
+  }
+}
