@@ -14,12 +14,13 @@ body {
   justify-content: space-between;
   margin: auto;
   background-color: white;
-  height: 85vh;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .images {
   position: relative;
-  width: 50%;
+  width: 65%;
   height: 100%;
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
@@ -182,6 +183,100 @@ body {
   border-left: 2px solid #3597fc;
 }
 
+.registration-investor {
+  display: flex;
+  flex-direction: column;
+}
+
+.investor-auth_title {
+  font-size: 21px;
+  margin-bottom: 15px;
+  color: #274859;
+}
+
+.investor-auth_slogan {
+  font-size: 14px;
+  color: #7b8a92;
+  margin-bottom: 50px;
+}
+
+.investor-radiogroup {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.investor-radiogroup_block > label {
+  cursor: pointer;
+}
+
+.investor-radiogroup_item {
+  margin-right: 10px;
+}
+
+.investor-radiogroup_item:checked::after {
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  top: -1px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 4px solid #3793fa;
+}
+
+.investor-info {
+  display: inline-block;
+  width: 230px;
+  font-size: 13px;
+  color: #a5a5a5;
+  padding: 10px;
+  box-shadow: 10px 10px 20px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.create-account {
+  font-size: 13px;
+  color: #a5a5a5;
+}
+
+.create-account_approval {
+  margin-bottom: 50px;
+}
+
+.create-account_label {
+  cursor: pointer;
+}
+
+.create-account_link {
+  color: #87b7ff;
+}
+
+.create-account_button {
+  position: relative;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 14px;
+  color: white;
+
+    cursor: pointer;
+
+  width: 245px;
+  height: 45px;
+
+  margin-right: 35px;
+
+  background-color: #3698fb;
+}
+
 @media screen and (max-width: 1920px) {
   .container {
     width: 1440px;
@@ -201,5 +296,9 @@ body {
 
   .separator {
     width: 480px;
+  }
+
+  .investor-radiogroup_item {
+    margin-right: 10px;
   }
 }
