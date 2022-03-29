@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Barlow";
-  src: url("/fonts/Barlow-Medium.eot");
+  font-family: "Barlow-Regular";
+  src: url("/fonts/Barlow-Regular.woff");
 }
 
 body {
   background-color: #eff6ff;
   color: #2a4a5c;
-  font-family: "Barlow";
+  font-family: "Barlow-Regular";
 }
 
 .container {
