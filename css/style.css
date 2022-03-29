@@ -277,6 +277,10 @@ body {
   background-color: #3698fb;
 }
 
+.create-account_button:hover {
+  background-color: #255b9b;
+}
+
 @media screen and (max-width: 1920px) {
   .container {
     width: 1440px;
