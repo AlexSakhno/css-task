@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   margin: auto;
   background-color: white;
-  height: 95vh;
+  height: 85vh;
 }
 
 .images {
@@ -116,62 +116,70 @@ body {
 }
 
 .separator {
-    position: relative;
-    font-size: 12px;
-    
-    text-align: center;
-    margin-bottom: 50px;
-    margin-right: 35px;
+  position: relative;
+  font-size: 12px;
+  width: 530px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-right: 35px;
 }
 
 .separator::after {
-    position: absolute;
-    content: "";
-    top: 7px;
-    left: 110px;
-    width: 110px;
-    height: 1px;
-    background-color: #e5e5e5;
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 110px;
+  width: 110px;
+  height: 1px;
+  background-color: #e5e5e5;
 }
 
 .separator::before {
-    position: absolute;
-    content: "";
-    top: 7px;
-    right: 110px;
-    width: 110px;
-    height: 1px;
-    background-color: #e5e5e5;
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: 110px;
+  width: 110px;
+  height: 1px;
+  background-color: #e5e5e5;
 }
 
-.registration-input { 
-    display: flex;   
-    margin-bottom: 50px;
+.registration-input {
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .registration-input_box {
-    position: relative;
-    width: 245px;
-    height: 55px;
-    border: 1px solid #e5e5e5;
-    padding: 25px 10px 0 10px;
-    box-sizing: border-box;
-    margin-right: 35px;
+  position: relative;
+  width: 245px;
+  height: 55px;
+  border: 1px solid #e5e5e5;
+  padding: 25px 10px 0 10px;
+  box-sizing: border-box;
+  margin-right: 35px;
 }
 
-.registration-input_box>input {
-    box-sizing: border-box;
-    font-size: 15px;
-    width: 100%;
-    border: none;
+.registration-input_span {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #8d9ba6;
+  font-size: 14px;
 }
 
-.registration-input_box>input:focus {
-    outline: none;
+.registration-input_box > input {
+  box-sizing: border-box;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+}
+
+.registration-input_box > input:focus {
+  outline: none;
 }
 
 .registration-input_box:hover {
-    border-left: 2px solid #3597fc;
+  border-left: 2px solid #3597fc;
 }
 
 @media screen and (max-width: 1920px) {
@@ -189,5 +197,9 @@ body {
 @media screen and (max-width: 1280px) {
   .container {
     width: 1024px;
+  }
+
+  .separator {
+    width: 480px;
   }
 }
