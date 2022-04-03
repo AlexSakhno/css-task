@@ -4,55 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iintoo</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Iintoo - invest together</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="images">
-        <div class="images-logo"></div>
+    <main class="container">
+      <div class="container-bg">
+        <div class="container-bg_logo"></div>
       </div>
 
-      <div class="registration">
-        <div class="registration-header">
-          <span class="home-auth_title">Get iintoo it today</span>
-          <span class="home-auth_slogan"
-            >There is no charge or obligation upon registration.</span
+      <section class="register-page">
+        <div class="register-page_header">
+          <h1 class="register-page_title">Get iintoo it today</h1>
+          <span class="register-page_slogan"
+            >There is no charge or obligation upon registration</span
           >
         </div>
 
-        <div class="registration-button">
-          <button class="registration-button_social--f">
+        <div class="register-form_social">
+          <button
+            class="register-form_social__button register-form_social__button--f"
+          >
             Register with Facebook
           </button>
-          <button class="registration-button_social--l">
-            Register with Linkedin
+          <button
+            class="register-form_social__button register-form_social__button--l"
+          >
+            Register with LinkedIn
           </button>
         </div>
 
-        <div class="separator">OR</div>
+        <div class="serp-page">
+          <span class="serp-page_text">OR</span>
+        </div>
 
-        <div class="registration-input">
-          <div class="registration-input_box">
-            <span class="registration-input_span">Email</span>
-            <input type="email" class="registration-input_email" />
+        <div class="register-form_other">
+          <div class="register-form_input__container">
+            <span class="register-form_input--email"></span>
+            <input type="email" class="register-form_input" />
           </div>
-          <div class="registration-input_box">
-            <span class="registration-input_span">Phone</span>
-            <input type="tel" class="registration-input_tel" />
+          <div class="register-form_input__container">
+            <span class="register-form_input--tel"></span>
+            <input type="tel" class="register-form_input" />
           </div>
         </div>
 
-        <div class="registration-investor">
-          <span class="investor-auth_title"
-            >What type of investor are you?</span
-          >
-          <span class="investor-auth_slogan"
-            >Select the type of investor you are below.</span
+        <div class="register-investor">
+          <h2 class="register-investor_title">What type of investor are you</h2>
+          <span class="register-investor_slogan"
+            >Select the type of investor you are below</span
           >
         </div>
 
-        <div class="investor-radiogroup">
+        <div class="register-investor_radio">
           <div class="investor-radiogroup_block">
             <input
               id="radio-1"
@@ -62,7 +66,7 @@
               value="1"
               checked
             />
-            <label for="radio-1">Individual &#9432;</label>
+            <label for="radio-1">Individual &#9432</label>
           </div>
           <div class="investor-radiogroup_block">
             <input
@@ -96,10 +100,12 @@
           </div>
         </div>
 
-        <p class="investor-info">
-          I am a natural person investing on my own behalf as a sole owner, join
-          tenant, or tenant in common
-        </p>
+        <div class="register-investor_info">
+          <p class="investor-info_text">
+            I am a natural person investing on my own behalf as a sole owner,
+            joint tenant, or tenant in common.
+          </p>
+        </div>
 
         <div class="create-account">
           <div class="create-account_approval">
@@ -117,7 +123,7 @@
 
           <button class="create-account_button">Create Account</button>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
