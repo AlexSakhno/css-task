@@ -251,7 +251,13 @@ body {
 }
 
 .create-account_approval {
+  display: flex;
   margin-bottom: 50px;
+  align-content: center;
+}
+
+.create-account_checkbox {
+  margin-right: 5px;
 }
 
 .create-account_label {
@@ -308,5 +314,23 @@ body {
 
   .investor-radiogroup_item {
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 768px;
+    margin: auto;
+    background-color: white;
+    height: 100vh;
+  }
+
+  .registration {
+    padding-top: 30px;
+
+  }
+
+  .images {
+    display: none;
   }
 }
